@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test You don't have at Here !!!</title>
+    <link rel="stylesheet" href="../style/admin.css">
+    <link rel="icon" href="../asset/hadouken-hadoken-pixel-art-ryu-others-V2.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+  </head>
+<body>
+  <header>
+    <h1> Inscription - Admin </h1>
+  </header>
+  <main>
+    <form action="#" method="POST" id="containerForm" onsubmit="return false">
+      <input
+      type="text"
+      name="Pseudo"
+      id="inputPseudo"
+      placeholder="Mettez votre pseudo"
+      onkeydown="validatorpseudo()"
+      />
+      <input
+      type="text"
+      name="emailAdress"
+      id="inputEmail"
+      placeholder="Mettez votre adress mail"
+      onkeydown="validatorEmail()"
+      />
+      <input
+      type="text"
+      name="password"
+      id="inputPassword"
+      placeholder="Mettez votre mot de passe"
+      onkeydown="validatorpassword()"
+      />
+      <input
+      type="text"
+      name="color"
+      id="inputColor"
+      placeholder="Mettez la couleur / hexa de votre Pseudo Admin "
+      />
+      <div id="jordanCheck">
+      <input
+      type="checkbox"
+      name="jordan"
+      id="inputJordan"
+      placeholder="Are you Jordan  ?"
+      />
+      <label> Are you Jordan ?</label>
+      </div>
+      <button type="submit" id="inputSubmit" class="inValidForm" onclick="sendData()"> Envoie des données </button>
+      </form>      
+      
+      <script src="../script/register.js"></script>
+  </main>
+  <footer>
+    <div id = "footer_copyright">
+      <p><span>@</span></p>
+      <p class = "getFullYear"></p>
+      <p> Street Cliker <span>. Tous Droits Réservés.</span></p>
+  </div>
+  </footer>
+  <script>
+    const fullYear = document.querySelector(".getFullYear");
+    fullYear.innerHTML = new Date().getFullYear();
+  </script>
+</body>
+</html>

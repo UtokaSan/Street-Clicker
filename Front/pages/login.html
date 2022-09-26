@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../style/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+  <title>Street Clicker - Login</title>
+
+</head>
+<body>
+  <nav id = "menu">
+    <div id = "main_nav">
+      <a href = "index.html"><p>Home</p></a>
+      <a href = "register.html"><p>Register</p></a>
+    </div>
+  </nav>
+  <h1>Connexion</h1>
+  <main>
+    <form id = "form_login" action="" method="POST" onsubmit="return false">
+      <input
+      type = "email"
+      id="inputEmail"
+      onkeydown="validatorEmail()"
+      placeholder = "Put your email, please"
+      size="30"
+      />
+      <input
+      type = "password"
+      id="inputPassword"
+      onkeydown="validatorpassword()"
+      placeholder = "Put your password, please"
+      size="30"
+      />
+      <button id="inputSubmit" class="inValidForm" onclick="Test()">Submit</button>
+  </form>
+  </main>
+  <footer>
+    <div id = "footer_copyright">
+      <p>
+        <span>@ <script>document.write(new Date().getFullYear());</script></span> 
+        Street Cliker <span>. Tous Droits Réservés.</span>
+      </p>
+  </div>
+  </footer>
+  <script src="../script/login.js"></script>
+  <!-- <script>
+    const takeInputEmail = document.querySelector("#inputEmail");
+    const takeInputPassword = document.querySelector("#inputPassword");
+  
+    takeInputEmail.addEventListener('click', function() { takeInputEmail.value = ""; });
+    takeInputPassword.addEventListener('click', function() { takeInputPassword.value = ""; });
+  </script> -->
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/register.css">
+    <title>Street Clicker</title>
+</head>
+<body>
+  <nav id = "menu">
+    <div id = "main_nav">
+      <a href = "index.html"><p>Home</p></a>
+      <a href = "login.html"><p>Login</p></a>
+    </div>
+  </nav>
+  <h1>Inscription</h1>
+  <main>
+    <form id = "form_login" method="POST">
+      <input
+      type = "email"
+      id="inputEmail"
+      onkeydown="validatorEmail()"
+      size="30"
+      value ="Email"
+      />
+      <input 
+      type = "email"
+      id = "inputConfirmEmail"
+      onkeydown="validatorEmail()"
+      size="30" 
+      value="Confirmation Email" 
+      />
+      <input
+      type = "password"
+      id="inputPassword"
+      onkeydown="validatorpassword()"
+      value="**********"
+      size="30"
+      />
+      <input
+      type = "password"
+      id = "inputConfirmPassword"
+      onkeydown = "validatorpassword()"
+      value = "**********"
+      size = "30"
+      />
+      <button id="inputSubmit" class="inValidForm">Submit</button>
+  </form>
+  </main>
+  <footer>
+    <div id = "footer_copyright">
+      <p><span>@</span></p>
+      <p class = "getFullYear"></p>
+      <p> Street Cliker <span>. Tous Droits Réservés.</span></p>
+  </div>
+  </footer>
+  <script>
+    const takeInputEmail = document.querySelector("#inputEmail");
+    const takeInputPassword = document.querySelector("#inputPassword");
+    const takeInputConfirmEmail = document.querySelector("#inputConfirmEmail");
+    const takeInputConfirmPassword = document.querySelector("#inputConfirmPassword");
+    const fullYear = document.querySelector(".getFullYear");
+
+    fullYear.innerHTML = new Date().getFullYear();
+    
+    takeInputEmail.addEventListener('click', function() { takeInputEmail.value = ""; });
+    takeInputPassword.addEventListener('click', function() { takeInputPassword.value = ""; });
+    takeInputConfirmEmail.addEventListener('click', function() { takeInputConfirmEmail.value = ""; });
+    takeInputConfirmPassword.addEventListener('click', function() { takeInputConfirmPassword.value = ""; });
+  </script>
+  <script src="../script/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/index.css">
+    <title>Street Clicker</title>
+</head>
+<body>
+  <nav id = "menu">
+    <div id = "main_nav">
+      <a href = "login.html"><p>Login</p></a>
+      <a href = "register.html"><p>Register</p></a>
+    </div>
+  </nav>
+  <div id = "side_nav">
+    <div class = "top_side_nav">
+      <div id = "gold_text"></div>
+      <img src = "../asset/gold_img.png" alt = "gold img">
+    </div>
+    <div class = "main_side_nav">
+      <p>Price : 1000 Gold</p>
+      <img src = "../asset/scroll_bonus_1.png" alt = "scroll bonus 1" class = "one_bonus">
+      <p>Price : 500 Gold</p>
+      <img src = "../asset/bonus_2_duringAttack.png" alt = "scroll bonus 2" class = "two_bonus">
+      <p>Price : 100 Gold</p>
+      <img src = "../asset/scroll_bonus_1.png" alt = "scroll bonus 3" class = "three_bonus">
+    </div>
+  </div>
+  <header>
+    <h1>Street Clicker</h1>
+  </header>
+  <main>
+    <div id = "main_clicker">
+      <div class = "lifeMax">
+        <div class = "life"></div>
+      </div>
+    </div>
+      <p class = "score"></p>
+      <button id = "btn_clicker">Hit</button>
+  </main>
+  <img src = "../asset/hadouken.gif" alt = "hadouken" class = "hadouken">
+  <footer>
+    <div id = "footer_copyright">
+      <p><span>@</span></p>
+      <p class = "getFullYear"></p>
+      <p> Street Cliker <span>. Tous Droits Réservés.</span></p>
+  </div>
+  </footer>
+  <script src = "../script/clicker.js"></script>
+  <script>
+    const fullYear = document.querySelector(".getFullYear");
+    fullYear.innerHTML = new Date().getFullYear();
+  </script>
+</body>
+</html>

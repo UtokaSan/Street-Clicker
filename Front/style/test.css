@@ -1,0 +1,13 @@
+button {
+    width: 200px;
+    height: 25px;
+    background: green;
+    border: 2px solid black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}

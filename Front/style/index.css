@@ -1,0 +1,140 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
+button  {
+  border: green 3px solid;
+  border-radius: 4px;
+  width: 5%;
+  height: 40%;
+}
+button:hover {
+  background-color: whitesmoke;
+}
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("../asset/map_2.jpg");
+  background-repeat: no-repeat;
+  background-position: top 50px right -50px;
+  }
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
+}
+header {
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+#main_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 10%;
+}
+#side_nav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  background: black;
+}
+.top_side_nav {
+  display: flex;
+  justify-content: end;
+  color: blanchedalmond;
+  font-size: 30px;
+  border: white 2px solid;
+}
+.top_side_nav img {
+  width: 15%;
+}
+.main_side_nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  color: blanchedalmond;
+}
+.main_side_nav img {
+  margin-top: 10px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main_clicker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lifeMax {
+  border: black 3px solid;
+  width: 400px;
+  height: 20px;
+}
+
+.life {
+  height:100%;
+  width: 100%;
+  background: greenyellow;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  color: white;
+  background: black;
+  padding: 15px;
+}
+#footer_copyright {
+  display: flex;
+  align-items: center;
+}
+#footer_copyright p {
+  padding-right: 5px;
+}
+#footer_copyright p span {
+  opacity: 50%;
+}
+.getFullYear {
+  opacity: 50%;
+}
+.two_bonus {
+  width: 40%;
+}
+.one_bonus {
+  width: 40%;
+}
+.three_bonus {
+  width: 40%;
+}
+.hadouken  {
+  position: absolute;
+  bottom: 10px;
+  left: 450px;
+}
